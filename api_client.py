@@ -1,10 +1,10 @@
 import requests  
 
 
-def fetch_users():
+def fetch_users(https_path):
     try:
         response = requests.get(
-            'https://jsonplaceholder.typicode.com/users',
+            https_path,
             timeout=10
             )
         response.raise_for_status()        
