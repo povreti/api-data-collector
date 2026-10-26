@@ -1,5 +1,5 @@
 import requests  
-
+import logging
 
 def fetch_users(https_path):
     try:
@@ -12,5 +12,5 @@ def fetch_users(https_path):
         return users
 
     except requests.exceptions.RequestException:
-        print('Ошибка чтения запроса')
+        logging.error('Ошибка чтения запроса')
         return None
