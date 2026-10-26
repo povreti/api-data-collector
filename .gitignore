@@ -5,3 +5,6 @@ __pycache__/
 # Logs
 Logs/
 *.log
+
+# VS Code
+.vscode/
